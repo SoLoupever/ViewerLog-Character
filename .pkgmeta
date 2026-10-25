@@ -1,0 +1,12 @@
+package-as: ViewerLog-Character
+
+move-folders:
+  ViewerLog_Reput: ViewerLog_Reput
+  ViewerLog_Reminder: ViewerLog_Reminder
+
+ignore:
+  - .github
+  - .gitignore
+  - .gitattributes
+  - README
+  - README.md

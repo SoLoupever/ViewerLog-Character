@@ -44,5 +44,3 @@ Whether used on its own or together with AltViewerLog, ViewerLog is designed to 
 ViewerLog peut fonctionner comme un addon autonome en collectant et en affichant ses propres données. Cependant, lorsqu'il est utilisé avec **AltViewerLog**, il peut exploiter des informations supplémentaires afin de fournir une vue plus complète de l'inventaire de l'ensemble de votre compte.
 
 Que vous l'utilisiez seul ou avec AltViewerLog, ViewerLog est conçu pour vous donner rapidement accès aux informations dont vous avez besoin, directement depuis les infobulles.
-
- undefined

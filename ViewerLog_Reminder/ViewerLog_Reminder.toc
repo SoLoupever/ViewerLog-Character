@@ -1,0 +1,30 @@
+## Interface: 120105
+## Title: ViewerLog |cff9955ff[Rappels]|r
+## Notes: Rappels de chat (événement calendrier / expiration courrier) pour ViewerLog
+## Author: SoLoup_ever
+## Version: 1.0.0
+## IconTexture: Interface\AddOns\ViewerLog/logo_vl.blp
+## RequiredDeps: ViewerLog
+
+## Category-enUS: Inventory
+## Category-deDE: Inventar
+## Category-esES: Inventario
+## Category-esMX: Inventario
+## Category-frFR: Inventaire
+## Category-itIT: Inventario
+## Category-koKR: 소지품
+## Category-ptBR: Inventário
+## Category-ruRU: Предметы
+## Category-zhCN: 物品栏
+## Category-zhTW: 物品欄
+
+## ── LOCALISATION ──────────────────────────────────────────────────
+locales\Locales_frFR.lua
+locales\Locales_enUS.lua
+
+## ── UTILITAIRES PARTAGÉS (chargés avant les 2 rappels) ────────────
+core\Utils.lua
+
+## ── RAPPELS — isolés, chacun sa frame/timer, aucune dépendance croisée ──
+core\EventReminder.lua
+core\MailReminder.lua

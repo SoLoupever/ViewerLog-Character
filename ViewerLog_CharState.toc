@@ -1,0 +1,26 @@
+## Interface: 120105
+## Title: ViewerLog |cff9955ff[État perso]|r
+## Notes: Équipement, ilvl, XP reposé et temps joué pour ViewerLog
+## Author: SoLoup_ever
+## Version: 1.0.0
+## RequiredDeps: ViewerLog
+## IconTexture: Interface\AddOns\ViewerLog\logo_vl.blp
+## Category-enUS: Inventory
+## Category-deDE: Inventar
+## Category-esES: Inventario
+## Category-esMX: Inventario
+## Category-frFR: Inventaire
+## Category-itIT: Inventario
+## Category-koKR: 소지품
+## Category-ptBR: Inventário
+## Category-ruRU: Предметы
+## Category-zhCN: 物品栏
+## Category-zhTW: 物品欄
+
+Link.lua
+
+## ── SCANNER ───────────────────────────────────────────────────────
+scanner\Character.lua
+
+## ── INIT — Chargé en dernier ─────────────────────────────────────
+Init.lua

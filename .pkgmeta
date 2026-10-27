@@ -1,8 +1,8 @@
 package-as: ViewerLog-Character
 
 move-folders:
-  ViewerLog_Reput: ViewerLog_Reput
-  ViewerLog_Reminder: ViewerLog_Reminder
+  ViewerLog-Character/ViewerLog_Reput: ViewerLog_Reput
+  ViewerLog-Character/ViewerLog_Reminder: ViewerLog_Reminder
 
 ignore:
   - .github

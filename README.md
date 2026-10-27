@@ -1,7 +1,11 @@
 # ViewerLog-Character
 A ViewerLog dependency that tracks character status, reputations, and reminders across your characters.
 
-### [![](https://media.forgecdn.net/attachments/description/1566052/description_3fe1db3e-ea60-4d7f-af13-326d4b7954f6.png)](https://discord.gg/2gfEKGAT46)  
+<p align="center">
+  <a href="https://github.com/SoLoupever/ViewerLog-Character"><img src="https://media.forgecdn.net/attachments/description/1766300/description_408121c1-40a6-4fca-9ad6-e5c746c2cd46.png" width="32%" alt="GitHub"></a>
+  <a href="https://www.curseforge.com/wow/addons/viewerlog-character/preview"><img src="https://media.forgecdn.net/attachments/description/1766300/description_b019cc75-5257-4de7-a40e-770abd83191b.png" width="32%" alt="CurseForge"></a>
+  <a href="https://discord.gg/2gfEKGAT46"><img src="https://media.forgecdn.net/attachments/description/1766300/description_17ec6e91-cd4b-434b-a330-d4719c763bd5.png" width="32%" alt="Discord"></a>
+</p>
   
   
 

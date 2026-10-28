@@ -7,10 +7,10 @@ ns.locales = {}
 
 ns.locales["frFR"] = {
     REMINDER_EVENT_PREFIX = "ViewerLog-Événement",
-    REMINDER_EVENT_MSG    = "%s est inscrit à « %s », qui commence dans %s !",
+    REMINDER_EVENT_MSG    = "%s-%s est inscrit à « %s », qui commence dans %s !",
 
     REMINDER_MAIL_PREFIX  = "ViewerLog-Courrier",
-    REMINDER_MAIL_MSG     = "%s a du courrier qui expire dans %s !",
+    REMINDER_MAIL_MSG     = "%s-%s a du courrier qui expire dans %s !",
 
     DURATION_DAYS_HOURS   = "%dj %dh",
     DURATION_HOURS_MIN    = "%dh%02d",

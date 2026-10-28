@@ -82,15 +82,15 @@ local function CheckReminders()
     for _, key in ipairs(api.GetAllCharacters()) do
         local charData = api.GetCharacterByKey(key)
         local events = charData and charData.reminderEvents
-        if events then
-            local charName = key:match("^(.+)@")
+        local charName, realmName = key:match("^(.+)@(.+)$")
+        if events and charName then
             for _, ev in ipairs(events) do
                 local remaining = ev.startsAt - now
                 local alertKey = key .. ":" .. tostring(ev.id)
                 if remaining > 0 and remaining <= LEAD_SECONDS and not _alerted[alertKey] then
                     _alerted[alertKey] = true
                     ns.Print(ns.L("REMINDER_EVENT_PREFIX"), string.format(
-                        ns.L("REMINDER_EVENT_MSG"), charName or key, ev.title, ns.FormatDuration(remaining)))
+                        ns.L("REMINDER_EVENT_MSG"), charName, realmName, ev.title, ns.FormatDuration(remaining)))
                 end
             end
         end

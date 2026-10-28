@@ -30,7 +30,7 @@ local function CheckMailExpirations()
             if remaining > 0 and remaining <= LEAD_SECONDS and _alertedAt[key] ~= info.expiresAt then
                 _alertedAt[key] = info.expiresAt
                 ns.Print(ns.L("REMINDER_MAIL_PREFIX"), string.format(
-                    ns.L("REMINDER_MAIL_MSG"), charName, ns.FormatDuration(remaining)))
+                    ns.L("REMINDER_MAIL_MSG"), charName, realmName, ns.FormatDuration(remaining)))
             end
         end
     end

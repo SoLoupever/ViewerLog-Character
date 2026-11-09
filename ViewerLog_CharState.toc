@@ -6,6 +6,10 @@
 ## RequiredDeps: ViewerLog
 ## IconTexture: Interface\AddOns\ViewerLog\logo_vl.blp
 
+## X-Curse-Project-ID: 1766300
+## X-Wago-ID: rNkg93Na
+
+
 ## Category-enUS: Database
 ## Category-deDE: Datenbank
 ## Category-esES: Base de datos

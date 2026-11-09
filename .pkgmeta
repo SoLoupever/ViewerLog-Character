@@ -4,7 +4,6 @@ move-folders:
   ViewerLog_Character/ViewerLog_Reput: ViewerLog_Reput
   ViewerLog_Character/ViewerLog_Reminder: ViewerLog_Reminder
 
-
 ignore:
   - .github
   - .gitignore

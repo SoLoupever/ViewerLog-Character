@@ -1,4 +1,4 @@
-name: Package and Release ViewerLog-Character
+name: Package and Release ViewerLog_Character
 
 on:
   push:

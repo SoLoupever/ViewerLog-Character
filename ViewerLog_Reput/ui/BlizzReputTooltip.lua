@@ -35,16 +35,17 @@ end
 local function GetBestCharacter(fid)
     local api = _G.ViewerLogAPI
     if not api or not api.IsReady or not api.IsReady() or not fid then return nil end
-    local bChar, bRealm, bClass, bData
+    local bKey, bClass, bData
     for _, key in ipairs(api.GetAllCharacters()) do
         local cData = api.GetCharacterByKey(key)
         local d = cData and cData.reputations and cData.reputations[fid]
         if d and IsMoreAdvanced(d, bData) then
-            local c, r = key:match("^(.+)@(.+)$")
-            bChar, bRealm, bClass, bData = c, r, cData.class, d
+            bKey, bClass, bData = key, cData.class, d
         end
     end
-    return bChar, bRealm, bClass, bData
+    if not bKey then return nil end
+    local c, r = bKey:match("^(.+)@(.+)$")
+    return c, r, bClass, bData
 end
 
 if _G.ViewerLogAPI then
@@ -119,7 +120,16 @@ local function SetupHook()
 
     -- hooksecurefunc + hook différé : hors du chemin sécurisé Blizzard
     -- (pas de taint, contrairement à RegisterCallback).
-    local function DeferHook() C_Timer.After(0, HookVisibleRows) end
+    local pending = false
+    local function RunHook()
+        pending = false
+        HookVisibleRows()
+    end
+    local function DeferHook()
+        if pending then return end
+        pending = true
+        C_Timer.After(0, RunHook)
+    end
 
     local sb = repFrame.ScrollBox
     if sb and sb.Update then
